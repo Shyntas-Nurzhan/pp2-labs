@@ -63,7 +63,7 @@ class Coin(pygame.sprite.Sprite):
         super().__init__()
         self.image = pygame.image.load("game-coin.png")
         self.rect = self.image.get_rect()
-        self.rect.center = (random.randint(40, screen_width - 40), 0)
+        self.rect.center = (random.randint(200, 400),random.randint(0, 300) )
 
     def move(self):
         self.rect.move_ip(0, 7)
@@ -72,7 +72,7 @@ class Coin(pygame.sprite.Sprite):
 
     def reset_position(self):
         self.rect.top = 0
-        self.rect.center = (random.randint(40, screen_width - 40), 0)
+        self.rect.center = (random.randint(200,400), random.randint(0, 300))
 
 
 # --- Создание объектов ---

@@ -1,0 +1,5 @@
+psycopg==3.2.6
+psycopg2==2.9.10
+psycopg2-binary==2.9.10
+pygame==2.6.1
+tzdata==2025.2
